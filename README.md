@@ -1,5 +1,5 @@
 # Single Subject Research (SSR) Plots Using Zsh + gnuplot
-This is a test of how one can create line graphs using Zsh and the gnuplot cli application.
+This is a test of how one can create line graphs using Zsh and the gnuplot cli application.<br>The interest in this project came out of curiosity to alternatives to using Microsoft Excel, Python, or the SSD for R package.
 ## Requirement
 1. Terminal shell using zsh.
 2. Install [gnuplot](http://www.gnuplot.info/)
