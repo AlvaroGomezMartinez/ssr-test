@@ -26,3 +26,10 @@ or
 ```
 ## Notes
 While this looks promising, it is not user friendly. It works well for A-B plots, but once you start introducing additional phases the complexity increases. It is do-able, however, you need to invest a good amount of time to get a shell working.
+### System
+Mac mini 2023<br>
+Chip: Apple M2<br>
+macOS: Sequoia 15.5<br>
+Terminal: Version 2.14 (455.1)<br>
+zsh: version 5.9 (arm64-apple-darwin24.0)<br>
+Visual Studio Code: Version 1.102.0
