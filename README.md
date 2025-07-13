@@ -1,9 +1,28 @@
-# A-B SSR Plot Using Zsh + gnuplot
+# Single Subject Research (SSR) Plots Using Zsh + gnuplot
 This is a test of how one can create line graphs using Zsh and the gnuplot cli application.
 ## Requirement
-1. [gnuplot](http://www.gnuplot.info/)
+1. Terminal shell using zsh.
+2. Install [gnuplot](http://www.gnuplot.info/)
 ```zsh
 brew install gnuplot
-``` 
+```
+3. Create a .csv file with the following headers (e.g. [a-b-data.csv](https://github.com/AlvaroGomezMartinez/ssr-test/blob/main/a-b-data.csv), [a-b-a-b-data.csv](https://github.com/AlvaroGomezMartinez/ssr-test/blob/main/a-b-a-b-data.csv)):
+```csv
+Session | Phase | Score
+```
+4. Create a .sh file to run the gnuplot script (e.g. [plot_ab_graph.sh](https://github.com/AlvaroGomezMartinez/ssr-test/blob/main/plot_ab_graph.sh), [plot_abab_graph.sh](https://github.com/AlvaroGomezMartinez/ssr-test/blob/main/plot_abab_graph.sh)).
+5. Give the .sh file permission to execute:
+```zsh
+chmod +x plot_ab_graph.sh
+```
+## Running the script
+From terminal run the script by providing its title and the data file. For example:
+```zsh
+./plot_ab_graph.sh a-b-data.csv
+```
+or
+```zsh
+./plot_abab_graph.sh a-b-a-b-data.csv
+```
 ## Notes
 While this looks promising, it is not user friendly. It works well for A-B plots, but once you start introducing additional phases the complexity increases. It is do-able, however, you need to invest a good amount of time to get a shell working.
